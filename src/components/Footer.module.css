@@ -1,0 +1,22 @@
+.footer {
+    /* border: 1px solid orange; */
+    
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer img {
+    font-size: 10px;
+    border: 1px solid gray;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.footer + p {
+    text-align: center;
+    color: hsl(0, 0%, 59%);
+    margin-bottom: 12px;
+}
