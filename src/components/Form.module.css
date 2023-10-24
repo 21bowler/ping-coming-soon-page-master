@@ -1,5 +1,6 @@
 .form {
     /* border: 1px solid #363636; */
+    position: relative;
     margin-top: 40px;
     display: flex;
     justify-content: center;
@@ -16,6 +17,15 @@
     width: 20rem;
 }
 
+.form label {
+    color: hsl(354, 100%, 66%);
+    margin-bottom: 17px;
+    font-style: italic;
+    position: absolute;
+    bottom: -50px;
+    left: 370px;
+}
+
 .form button {
     padding: 1rem 3rem;
     border-radius: 28px;
@@ -27,13 +37,38 @@
     cursor: pointer;
 }
 
-.form + img {
-    
-    
-}
-
 ::placeholder {
     color: hsl(223, 100%, 88%);
+}
+@media screen and (max-width: 1100px) {
+    .form + div img {
+        width: 1000px;
+    }
+    .form label {
+        left: 250px;
+     }
+}
+
+@media screen and (max-width: 800px){
+    .form + div img {
+        width: 700px;
+    }
+
+    .form label {
+       left: 150px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .form + div img {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .form + div img {
+        width: 500px;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -45,10 +80,21 @@
         width: 88vw;
         margin-bottom: 10px;
     }
+    .form label {
+        position: relative;
+        bottom: 0;
+        left: 0;
+    }
     .form button {
         width: auto;
         font-weight: bold;
         letter-spacing: 1px;
+    }
+    .form + div {
+        margin: 6rem 0;
+    }
+    .form + div img{
+        width: 450px;
     }
 }
 

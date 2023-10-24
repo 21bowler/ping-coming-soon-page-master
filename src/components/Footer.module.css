@@ -3,7 +3,7 @@
     
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 25px;
 }
 
 .footer img {
@@ -15,8 +15,12 @@
     cursor: pointer;
 }
 
+.footer img:hover {
+    color: blue;
+}
+
 .footer + p {
     text-align: center;
     color: hsl(0, 0%, 59%);
-    margin-bottom: 12px;
+    margin: 2rem 0;
 }

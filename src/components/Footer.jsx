@@ -12,7 +12,7 @@ const Footer = () => {
         <img src={twitterIcon} alt="twitter-icon" />
         <img src={instagramIcon} alt="instagram-icon" />
       </footer>
-      <p>&copy; Copyright Ping. All rights reserved.</p>
+      <p>&copy; Copyright Pin. All rights reserved.</p>
     </>
   );
 };
